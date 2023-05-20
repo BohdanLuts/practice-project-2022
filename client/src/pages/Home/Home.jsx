@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import FirstNamingPlatformList from './FirstNamingPlatformList';
+import ManagedContestsList from './ManagedContestsList';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -235,6 +236,9 @@ const Home = props => {
                   alt='compressed'
                 />
               </div>
+            </div>
+            <div className={styles.managedContestsListContainer}>
+              <ManagedContestsList />
             </div>
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
